@@ -37,9 +37,10 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Trackball keyboard  Operating Guide
 
 1.Please use QMK MSYS to build firmware 
+   
    make voltong:voltong_v1  
    after build you can see the firmware named voltong_voltong_v1.bin
    
 2.Flashing the firmware using ST-Link Utility.
 
-3.Flashing the bootloader(generic_boot20_pb7.bin) is flashed to the start address of the Flash at 0x08000000
+3.Flashing the bootloader(generic_boot20_pb7.bin)  to the start address of the Flash at 0x08000000
