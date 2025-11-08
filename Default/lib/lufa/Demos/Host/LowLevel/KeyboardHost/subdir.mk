@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../lib/lufa/Demos/Host/LowLevel/KeyboardHost/ConfigDescriptor.c \
+../lib/lufa/Demos/Host/LowLevel/KeyboardHost/KeyboardHost.c 
+
+C_DEPS += \
+./lib/lufa/Demos/Host/LowLevel/KeyboardHost/ConfigDescriptor.d \
+./lib/lufa/Demos/Host/LowLevel/KeyboardHost/KeyboardHost.d 
+
+OBJS += \
+./lib/lufa/Demos/Host/LowLevel/KeyboardHost/ConfigDescriptor.o \
+./lib/lufa/Demos/Host/LowLevel/KeyboardHost/KeyboardHost.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+lib/lufa/Demos/Host/LowLevel/KeyboardHost/%.o: ../lib/lufa/Demos/Host/LowLevel/KeyboardHost/%.c lib/lufa/Demos/Host/LowLevel/KeyboardHost/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

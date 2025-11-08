@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../lib/chibios/os/hal/ports/ADUCM/ADUCM36x/aducm_isr.c \
+../lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_lld.c \
+../lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_pal_lld.c \
+../lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_spi_lld.c \
+../lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_st_lld.c 
+
+C_DEPS += \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/aducm_isr.d \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_lld.d \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_pal_lld.d \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_spi_lld.d \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_st_lld.d 
+
+OBJS += \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/aducm_isr.o \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_lld.o \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_pal_lld.o \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_spi_lld.o \
+./lib/chibios/os/hal/ports/ADUCM/ADUCM36x/hal_st_lld.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+lib/chibios/os/hal/ports/ADUCM/ADUCM36x/%.o: ../lib/chibios/os/hal/ports/ADUCM/ADUCM36x/%.c lib/chibios/os/hal/ports/ADUCM/ADUCM36x/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

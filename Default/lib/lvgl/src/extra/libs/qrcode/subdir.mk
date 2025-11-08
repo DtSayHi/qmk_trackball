@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../lib/lvgl/src/extra/libs/qrcode/lv_qrcode.c \
+../lib/lvgl/src/extra/libs/qrcode/qrcodegen.c 
+
+C_DEPS += \
+./lib/lvgl/src/extra/libs/qrcode/lv_qrcode.d \
+./lib/lvgl/src/extra/libs/qrcode/qrcodegen.d 
+
+OBJS += \
+./lib/lvgl/src/extra/libs/qrcode/lv_qrcode.o \
+./lib/lvgl/src/extra/libs/qrcode/qrcodegen.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+lib/lvgl/src/extra/libs/qrcode/%.o: ../lib/lvgl/src/extra/libs/qrcode/%.c lib/lvgl/src/extra/libs/qrcode/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

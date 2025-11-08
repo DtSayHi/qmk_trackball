@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../keyboards/tkw/grandiceps/keymaps/default/keymap.c 
+
+C_DEPS += \
+./keyboards/tkw/grandiceps/keymaps/default/keymap.d 
+
+OBJS += \
+./keyboards/tkw/grandiceps/keymaps/default/keymap.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+keyboards/tkw/grandiceps/keymaps/default/%.o: ../keyboards/tkw/grandiceps/keymaps/default/%.c keyboards/tkw/grandiceps/keymaps/default/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../keyboards/pizzakeyboards/pizza65/keymaps/iso_blocker_split_bs/keymap.c 
+
+C_DEPS += \
+./keyboards/pizzakeyboards/pizza65/keymaps/iso_blocker_split_bs/keymap.d 
+
+OBJS += \
+./keyboards/pizzakeyboards/pizza65/keymaps/iso_blocker_split_bs/keymap.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+keyboards/pizzakeyboards/pizza65/keymaps/iso_blocker_split_bs/%.o: ../keyboards/pizzakeyboards/pizza65/keymaps/iso_blocker_split_bs/%.c keyboards/pizzakeyboards/pizza65/keymaps/iso_blocker_split_bs/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
