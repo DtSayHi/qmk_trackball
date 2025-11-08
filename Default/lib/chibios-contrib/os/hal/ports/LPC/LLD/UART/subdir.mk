@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/hal_serial_lld.c \
+../lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/hal_uart_lld.c 
+
+C_DEPS += \
+./lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/hal_serial_lld.d \
+./lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/hal_uart_lld.d 
+
+OBJS += \
+./lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/hal_serial_lld.o \
+./lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/hal_uart_lld.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/%.o: ../lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/%.c lib/chibios-contrib/os/hal/ports/LPC/LLD/UART/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

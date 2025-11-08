@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../keyboards/neson_design/700e/700e.c 
+
+C_DEPS += \
+./keyboards/neson_design/700e/700e.d 
+
+OBJS += \
+./keyboards/neson_design/700e/700e.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+keyboards/neson_design/700e/%.o: ../keyboards/neson_design/700e/%.c keyboards/neson_design/700e/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

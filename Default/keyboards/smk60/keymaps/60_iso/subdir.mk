@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../keyboards/smk60/keymaps/60_iso/keymap.c 
+
+C_DEPS += \
+./keyboards/smk60/keymaps/60_iso/keymap.d 
+
+OBJS += \
+./keyboards/smk60/keymaps/60_iso/keymap.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+keyboards/smk60/keymaps/60_iso/%.o: ../keyboards/smk60/keymaps/60_iso/%.c keyboards/smk60/keymaps/60_iso/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

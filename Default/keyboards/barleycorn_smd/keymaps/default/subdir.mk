@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../keyboards/barleycorn_smd/keymaps/default/keymap.c 
+
+C_DEPS += \
+./keyboards/barleycorn_smd/keymaps/default/keymap.d 
+
+OBJS += \
+./keyboards/barleycorn_smd/keymaps/default/keymap.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+keyboards/barleycorn_smd/keymaps/default/%.o: ../keyboards/barleycorn_smd/keymaps/default/%.c keyboards/barleycorn_smd/keymaps/default/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU Arm Cross C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O2 -g -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
